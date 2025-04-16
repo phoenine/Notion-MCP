@@ -1,0 +1,23 @@
+{
+    "instruction": "你可以调用一个名为 Notion 工具的外部工具来帮助用户完成与 Notion 数据库相关的操作……（略）",
+    "examples": [
+        {
+            "user": "帮我查一下页面 123 下的所有数据库",
+            "tool_call": {
+                "action": "query_databases",
+                "payload": {
+                    "page_id": "123"
+                }
+            }
+        },
+        {
+            "user": "请列出这个数据库里的页面: abc",
+            "tool_call": {
+                "action": "query_pages",
+                "payload": {
+                    "database_id": "abc"
+                }
+            }
+        }
+    ]
+}
